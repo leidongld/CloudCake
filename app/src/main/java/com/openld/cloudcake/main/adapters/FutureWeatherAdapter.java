@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.openld.cloudcake.CloudCakeApplication;
 import com.openld.cloudcake.R;
 import com.openld.cloudcake.WeatherIconFactory;
-import com.openld.cloudcake.beans.CityWeatherBean;
+import com.openld.cloudcake.main.m.beans.CityWeatherBean;
 
 import java.util.List;
 

@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CloudCake"
         tools:ignore="AllowBackup,Instantiatable,UnusedAttribute">
-        <activity android:name=".cityselect.v.CitySelectActivity"></activity>
+        <activity android:name=".cityselect.v.CitySelectActivity" />
         <activity android:name=".main.v.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

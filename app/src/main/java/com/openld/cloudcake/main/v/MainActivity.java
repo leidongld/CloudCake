@@ -1,7 +1,6 @@
 package com.openld.cloudcake.main.v;
 
 import android.annotation.SuppressLint;
-import android.app.Presentation;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -23,15 +22,13 @@ import com.openld.cloudcake.CloudCakeApplication;
 import com.openld.cloudcake.R;
 import com.openld.cloudcake.WeatherIconFactory;
 import com.openld.cloudcake.WindIconFactory;
-import com.openld.cloudcake.beans.CityWeatherBean;
+import com.openld.cloudcake.main.m.beans.CityWeatherBean;
 import com.openld.cloudcake.cityselect.CitySelectConstants;
 import com.openld.cloudcake.main.MainContract;
 import com.openld.cloudcake.main.adapters.FutureWeatherAdapter;
 import com.openld.cloudcake.main.p.MainPresenter;
 
-import java.util.Date;
 import java.util.List;
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity implements MainContract.IView {
     private static final String TAG = "MainActivity";
@@ -180,7 +177,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.IVie
                 };
                 mRcvFutureDays.setLayoutManager(layoutManager);
                 mRcvFutureDays.setAdapter(mFutureWeatherAdapter);
-                mRcvFutureDays.addItemDecoration(new DividerItemDecoration(CloudCakeApplication.getContext(), DividerItemDecoration.VERTICAL));
+                mRcvFutureDays.addItemDecoration(new DividerItemDecoration(MainActivity.this, RecyclerView.VERTICAL));
             }
         });
     }

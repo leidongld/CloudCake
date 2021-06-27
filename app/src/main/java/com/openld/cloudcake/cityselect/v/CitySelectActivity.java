@@ -83,4 +83,10 @@ public class CitySelectActivity extends AppCompatActivity implements CitySelectC
     public void onPageScrollStateChanged(int state) {
 
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        CitySelectPresenter.release();
+    }
 }

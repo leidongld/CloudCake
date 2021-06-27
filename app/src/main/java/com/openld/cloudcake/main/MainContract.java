@@ -2,9 +2,8 @@ package com.openld.cloudcake.main;
 
 import androidx.annotation.NonNull;
 
-import com.openld.cloudcake.beans.CityWeatherBean;
+import com.openld.cloudcake.main.m.beans.CityWeatherBean;
 
-import java.util.Date;
 import java.util.List;
 
 /**

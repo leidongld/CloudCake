@@ -1,4 +1,4 @@
-package com.openld.cloudcake.beans;
+package com.openld.cloudcake.main.m.beans;
 
 import java.io.Serializable;
 import java.util.List;

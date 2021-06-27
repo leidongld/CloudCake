@@ -8,7 +8,7 @@ import android.content.Intent;
 import android.os.Looper;
 
 import com.google.gson.Gson;
-import com.openld.cloudcake.beans.CityWeatherBean;
+import com.openld.cloudcake.main.m.beans.CityWeatherBean;
 import com.openld.cloudcake.cityselect.v.CitySelectActivity;
 import com.openld.cloudcake.main.MainContract;
 import com.openld.cloudcake.main.m.MainModel;

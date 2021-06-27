@@ -39,6 +39,12 @@ public class CitySelectPresenter implements CitySelectContract.IPresenter {
         return mPresenter;
     }
 
+    public static void release() {
+        if (mPresenter != null) {
+            mPresenter = null;
+        }
+    }
+
     @Override
     public List<CityInfoBean> obtainCityList() {
         return mCitySelectModel.queryAllCityList();
